@@ -27,9 +27,12 @@ This folder contains the documentation and technical specifications for a **Zero
 </div>
 
 <div align="center">
-  <video src="ZVS%20IH%20heating%20metal(download raw file to watch).mp4" width="600" controls>
+  <video src="https://github.com/user-attachments/assets/b719a308-87ff-4d2b-a85c-4f12e2733660" width="600" controls>
+    Your browser does not support the video tag.
   </video>
+  <p><i>Demonstration of the ZVS Induction Heater heating metal.</i></p>
 </div>
+
 
 
 ---
