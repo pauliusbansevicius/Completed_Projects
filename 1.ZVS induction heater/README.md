@@ -1,18 +1,26 @@
 # ZVS Induction Heater Manual
 
-<table style="border: none; border-collapse: collapse;">
+<div align="center">
+  <img src="ZVS%20IH%20schematic,%20waveforms%20and%20FFT.png" alt="Left Image" width="48%">
+  <img src="Glowing%20red%20alligator%20clip%20in%20darkness.jpg" alt="Right Image" width="48%">
+</div>
+
+This folder contains the documentation and technical specifications for a **Zero Voltage Switching (ZVS)** induction heater.
+
+<div align="center">
+<table style="border: 4px solid red; border-collapse: collapse;">
   <tr>
-    <td style="border: none; padding: 10px;">
-      <img src="ZVS%20IH%20circuit.jpg" alt="Left Image" width="400">
-    </td>
-    <td style="border: none; padding: 10px;">
-      <img src="Glowing%20alligator%20clip%20in%20darkness.jpg" alt="Right Image" width="400">
+    <td style="padding: 20px; background-color: #fff5f5; color: #b91c1c; border: 4px solid red;">
+      <p align="center">
+        ❗❗❗❗ <strong>WARNING</strong> ❗❗❗❗
+      </p>
+      <p>
+        If you are using this documentary as a tutorial to build your own induction heater, <strong>PLEASE</strong> use a PSU or any other power supply that has shorting protection. I can guarantee that at first startup your ZVS induction heater <strong>WILL</strong> fail to oscillate and short the power supply. A PSU will just safely turn off without damaging any components. If you use a car battery or any other power source with no shorting protection it will kill both of your MOSFETs instantly, potentially igniting, exploding and sending shrapnel everywhere. <strong>You have been warned.</strong>
+      </p>
     </td>
   </tr>
 </table>
-
-This folder contains the documentation and technical specifications for a **Zero Voltage Switching (ZVS)** induction heater.
-❗❗❗❗** WARNING: If you are using this documentary as a tutorial to build your own induction heater, PLEASE use a PSU or any other power supply that has shorting protection. I can guarantee that at first startup your ZVS induction heater WILL fail to oscillate and short the power supply. A PSU will just safely turn off without damaging any components. If you use a car battery or any other power source with no shorting protection it will kill both of your MOSFETs instantly, potentially igniting, exploding and sending shrapnel everywhere. You have been warned.** ❗❗❗❗
+</div>
 
 ---
 
