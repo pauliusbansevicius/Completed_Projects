@@ -11,6 +11,7 @@ This repository contains the documentation and technical specifications for a **
        style="border: 2px solid black; display: block;">
   <p><i>Figure 1: ZVS driver schematic, output waveforms, and FFT analysis.</i></p>
 </div>
+
 | Component | Specification | Description |
 | :--- | :--- | :--- |
 | **V1** | 12V DC | Power supply (PC PSU or car battery). |
@@ -49,6 +50,7 @@ This repository contains the documentation and technical specifications for a **
        style="border: 2px solid black; display: block;">
   <p><i>Figure 1: ZVS driver schematic, output waveforms, and FFT analysis.</i></p>
 </div>
+
 The ZVS induction heater is a **self-oscillating parallel resonant inverter**.
 ZVS induction heater can be split into two parts: **a parallel resonant circuit** and **a circuit that adds energy to the resonant circuit**
 
