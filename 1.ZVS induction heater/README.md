@@ -1,7 +1,7 @@
 # ZVS Induction Heater Manual
 
 <div align="center">
-  <img src="ZVS%20IH%20schematic,%20waveforms%20and%20FFT.png" alt="Left Image" width="48%">
+  <img src="ZVS%20IH%20circuit.png" alt="Left Image" width="48%">
   <img src="Glowing%20red%20alligator%20clip%20in%20darkness.jpg" alt="Right Image" width="48%">
 </div>
 
