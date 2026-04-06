@@ -109,9 +109,7 @@ ZVS induction heater can be split into two parts: **a parallel resonant circuit*
    After **M2** closes, the potential at the gate of **M1** increases until **M1** turns on, which then shorts the **right** side of the resonant circuit to ground. This continuous switching maintains the ZVS oscillations.
 
 7. **Efficiency and Heat:**
-   The primary advantage of **Zero Voltage Switching (ZVS)** is that the NMOSFETs are only switched when the voltage across them is at 0V. Theoretically, this makes the circuit nearly 100% efficient. 
-   
-   However, in practice, oscillations are not perfect; the NMOSFETs still generate heat and require substantial heatsinks. Practical efficiency usually ranges between **70-90%**.
+   The primary advantage of **Zero Voltage Switching (ZVS)** is that the NMOSFETs are only switched when the voltage across them is at 0V. Theoretically, this makes the circuit nearly 100% efficient. However, in practice, oscillations are not perfect; the NMOSFETs still generate heat and require substantial heatsinks. Practical efficiency usually ranges between **70-90%**.
 
 8. **Induction Heating:**
    The high current flowing through the work coil (**L1**) creates a powerful magnetic field. When a piece of metal is placed inside **L1**, eddy currents are induced within it, which rapidly heat the metal.
@@ -132,7 +130,7 @@ Here are the problems encountered during the development of Version 2 (V2). All 
    V1 used 6x150nF capacitors, which couldn't heat workpieces above 150-200°C. V2 uses 6x1uF capacitors (6.6x larger), which successfully heats metal until it is bright red.
 
 4. **Prototyping Board Base (Inconsequential for V2):**
-   In hindsight, "dead-bug" style or bus bar soldering is superior. V1's board bulged due to the high thermal mass of 10awg wire during repeated soldering. V2 was built as a final product with better thermal management, making this a non-issue.
+   In hindsight, "dead-bug" style or bus bar soldering is superior. V1's board bulged due to the high thermal mass of 10awg wire during repeated soldering. V2 was built as a perfect prototype, making this a non-issue.
 
 5. **Simultaneous NMOSFET Activation (Shorting):**
    A common ZVS issue where both FETs turn on halfway and short the supply. V1 failed to oscillate for a week due to cold solder joints. For V2, joints were reflowed at 430-450°C with fresh solder, resulting in a successful startup on the first try.
