@@ -9,7 +9,7 @@ This folder contains the documentation and technical specifications for a **Zero
         ❗❗❗❗ <strong>WARNING</strong> ❗❗❗❗
       </p>
       <p>
-        If you are using this documentary as a tutorial to build your own induction heater, <strong>PLEASE</strong> use a PSU or any other power supply that has shorting protection. I can guarantee that at first startup your ZVS induction heater <strong>WILL</strong> fail to oscillate and short the power supply. A PSU will just safely turn off without damaging any components. If you use a car battery or any other power source with no shorting protection it could potentially kill both of your MOSFETs instantly, igniting, exploding and sending shrapnel everywhere. <strong>You have been warned.</strong>
+        If you are using this documentary as a tutorial to build your own induction heater, <strong>PLEASE</strong> use a PSU or any other power supply that has shorting protection. I can guarantee that at first startup your ZVS induction heater <strong>WILL</strong> fail to oscillate and short the power supply. A PSU will just safely turn off without damaging any components. If you use a car battery or any other power source with no shorting protection it could potentially kill both of your MOSFETs instantly, igniting and/or exploding your project and sending shrapnel everywhere. <strong>You have been warned.</strong>
       </p>
     </td>
   </tr>
