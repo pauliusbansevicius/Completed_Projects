@@ -9,7 +9,7 @@ This folder contains the documentation and technical specifications for a **Zero
         ❗❗❗❗ <strong>WARNING</strong> ❗❗❗❗
       </p>
       <p>
-        If you are using this documentary as a tutorial to build your own induction heater, <strong>PLEASE</strong> use a PSU or any other power supply that has shorting protection. I can guarantee that at first startup your ZVS induction heater <strong>WILL</strong> fail to oscillate and short the power supply. A PSU will just safely turn off without damaging any components. If you use a car battery or any other power source with no shorting protection it will kill both of your MOSFETs instantly, potentially igniting, exploding and sending shrapnel everywhere. <strong>You have been warned.</strong>
+        If you are using this documentary as a tutorial to build your own induction heater, <strong>PLEASE</strong> use a PSU or any other power supply that has shorting protection. I can guarantee that at first startup your ZVS induction heater <strong>WILL</strong> fail to oscillate and short the power supply. A PSU will just safely turn off without damaging any components. If you use a car battery or any other power source with no shorting protection it could potentially kill both of your MOSFETs instantly, igniting, exploding and sending shrapnel everywhere. <strong>You have been warned.</strong>
       </p>
     </td>
   </tr>
@@ -118,22 +118,28 @@ ZVS induction heater can be split into two parts: **a parallel resonant circuit*
 
 ### Problems Encountered
 
-Here are the problems encountered during the development of Version 2 (V2). All issues from V1 have been addressed or found to be inconsequential.
+Here are the problems encountered during the development of Version 1 (V1). When developing V2, all issues from V1 have been addressed or found to be inconsequential.
 
 1. **Inductor chokes L2 and L3 (Insufficient Inductance):**
-   The V1 circuit was backfeeding 16V bursts to the 12V supply, risking damage to the PSU decoupling capacitors. Initially, a 4700uF capacitor was added to short the AC bias, but in V2, the inductance was increased from 33uH to 100uH, rectifying the problem immediately.
+   Initially, V1 prototype was backfeeding 16V bursts back into the PSUs +12V output. In V1 I solved it by adding a 4700uF decoupling capacitor to short the bursts to ground. In V2 I increased choke inductance for each side from 33uH to 100uH. This rectified the problem immeidately.
 
 2. **Main Work Coil Overheating (Inconsequential):**
-   Ideally, the coil would be copper tubing with water cooling. Since V2 uses 10awg wire, insulation can melt if used too long. However, the wire heats primarily from workpiece radiation, not internal current. Testing showed V2 can heat a workpiece for 5 minutes—plenty of time to reach "bright red" heat—making this issue inconsequential for testing goals.
+   The main work coil in V1 and V2 is made from 8-10 turn 10awg wire, 5cm diameter. Since the coil is made out of wire, it cannot be heated above a certain temperature, in which the insulation will start to melt. It is worth mentioning that the coil heats up from the workpieces **radiated heat** and not because of current (10awg is sufficient for 5-10 minute bursts). Ideally, in V2 it should have been made from copper tubing, which would not have a reachable upper limit temperature. Additionally it could have water running through the tube, removing the problem entirely. I left the same coil in V2 as in V1, because it proved to be inconsequential while heating comparably small work pieces, especially if I cool off the coil between tests.
 
 3. **Capacitor Bank Capacity (Too Low):**
-   V1 used 6x150nF capacitors, which couldn't heat workpieces above 150-200°C. V2 uses 6x1uF capacitors (6.6x larger), which successfully heats metal until it is bright red.
+   V1 used 6x150nF capacitors, which couldn't provide enough power to heat workpieces above 150-200°C. V2 uses 6x1uF capacitors (6.6x larger), which successfully heats metal until it is bright red.
 
 4. **Prototyping Board Base (Inconsequential for V2):**
    In hindsight, "dead-bug" style or bus bar soldering is superior. V1's board bulged due to the high thermal mass of 10awg wire during repeated soldering. V2 was built as a perfect prototype, making this a non-issue.
 
 5. **Simultaneous NMOSFET Activation (Shorting):**
-   A common ZVS issue where both FETs turn on halfway and short the supply. V1 failed to oscillate for a week due to cold solder joints. For V2, joints were reflowed at 430-450°C with fresh solder, resulting in a successful startup on the first try.
+   A common ZVS issue is where both FETs turn on halfway and short the supply. During the development of V1 I spent more than a week hunting down what causes this problem. As it turns out, oscillation was dying out because of several cold solder joints on comparably thick bus bars. To fix it I just added more solder to all of the joints and reflowed them at a higher temperature (around 430-450 celsius). V2 worked at first startup.
+
+---
+
+### What are my future plans for this project?
+
+Right now, I am satisfied with the latest prototype (version 2). I have plans to make another ZVS driver in the far future that would be mounted on a PCB, powered from 24V, would include a coil made out of copper tubing and a housing. Essentially, I want to remove all the "I can live with it" problems and make it look like a commercial product that you could find in a hardware store and not a prototype. This will most likely require a budget of, at the very least, 2x the budget of V1 and V2 combined, which I cannot justify spending just yet. Stay tuned though 👌
 
 
 
