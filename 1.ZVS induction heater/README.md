@@ -72,7 +72,8 @@ This folder contains the documentation and technical specifications for a **Zero
 * **Input Voltage:** 12V.
 * **Idle Current:** 1-1.5A.
 * **Heating Current:** Up to 20A.
- * **Efficiency:** Approximately 90%.
+* **Frequency:** ~35kHz
+* **Efficiency:** Approximately 90%.
 
 ---
 
