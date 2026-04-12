@@ -88,7 +88,7 @@ This specific circuit CAN work with 24V, but then you definetly need to replace 
 </div>
 
 
-
+---
 
 
 ## How it Works
