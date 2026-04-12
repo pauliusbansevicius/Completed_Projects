@@ -76,6 +76,20 @@ This folder contains the documentation and technical specifications for a **Zero
 * **Efficiency:** Approximately 90%.
 
 ---
+## Using 24V as the input
+
+This specific circuit CAN work with 24V, but then you definetly need to replace the PVC wire with copper tubing. The current running through the work coil heats it up enough to burn you in ~15 seconds. But the difference in power is unimaginable! Although have in mind that this will increase the current draw 2 times, so I was not able to heat the big alligator clip. Even heating the end of the pincers pulls 9.5A, while alligator clip might draw even above 20A (which is the max current of this particular schematic due to the inductor choke max current).
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/b64cb2a6-86e0-4cc9-95a2-8d8954e66412" width="600" controls>
+    Your browser does not support the video tag.
+  </video>
+  <p><i>Operation of the ZVS induction heater with 24V input.</i></p>
+</div>
+
+
+
+
 
 ## How it Works
 <div align="center">
