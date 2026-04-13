@@ -9,7 +9,7 @@ This folder contains the documentation and technical specifications for a **Zero
         ❗❗❗❗ <strong>WARNING</strong> ❗❗❗❗
       </p>
       <p>
-        If you are using this documentary as a tutorial to build your own induction heater, <strong>PLEASE</strong> use a PSU or any other power supply that has shorting protection. I can guarantee that at first startup your ZVS induction heater <strong>WILL</strong> fail to oscillate and short the power supply. A PSU will just safely turn off without damaging any components. If you use a car battery or any other power source with no shorting protection it could potentially kill both of your MOSFETs instantly, igniting and/or exploding your project and sending shrapnel everywhere. <strong>You have been warned.</strong>
+        If you are using this documentary as a tutorial to build your own induction heater, <strong>PLEASE</strong> use a PC PSU or any other power supply that has shorting protection. I can guarantee that at first startup your ZVS induction heater <strong>WILL</strong> fail to oscillate and short the power supply. A PSU will just safely turn off without damaging any components. If you use a car battery or any other power source with no shorting protection it could potentially kill both of your MOSFETs instantly, igniting and/or exploding your project and sending shrapnel everywhere. <strong>You have been warned.</strong>
       </p>
     </td>
   </tr>
@@ -37,7 +37,7 @@ This folder contains the documentation and technical specifications for a **Zero
 
 ---
 
-## Bill of Materials (B.O.M) 
+## Bill of Materials 
 <div align="center">
   <img src="ZVS%20IH%20schematic,%20waveforms%20and%20FFT.png" 
        alt="ZVS Driver Analysis" 
@@ -78,7 +78,7 @@ This folder contains the documentation and technical specifications for a **Zero
 ---
 ## Using 24V as the input
 
-This specific circuit CAN work with 24V, but then you definetly need to replace the PVC wire with copper tubing. The current running through the work coil heats it up enough to burn you in ~15 seconds. But the difference in power is unimaginable! Although have in mind that this will increase the current draw 2 times, so I was not able to heat the big alligator clip. Even heating the end of the pincers pulls 9.5A, while alligator clip might draw even above 20A (which is the max current of this particular schematic due to the inductor choke max current).
+This specific circuit CAN work with 24V, but then you definetly need to replace the PVC wire with copper tubing. The current running through the work coil heats it up enough to burn you in ~15 seconds. But the difference in power is considerable! Although have in mind that this will increase the current draw 2 times, so I was not able to heat the big alligator clip with my bench power supply. Even heating the end of the pincers pulls 9.5A, while alligator clip might draw even above 20A (which is the max current of this particular schematic due to the inductor choke max current).
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/b64cb2a6-86e0-4cc9-95a2-8d8954e66412" width="600" controls>
@@ -100,7 +100,7 @@ This specific circuit CAN work with 24V, but then you definetly need to replace 
 </div>
 
 The ZVS induction heater is a **self-oscillating parallel resonant inverter**.
-ZVS induction heater can be split into two parts: **a parallel resonant circuit** and **a circuit that adds energy to the resonant circuit**
+ZVS drivers in general can be split into two parts: **a parallel resonant circuit** and **a circuit that adds energy to the resonant circuit**
 
 
 1. **Power Application:**
