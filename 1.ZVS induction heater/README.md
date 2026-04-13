@@ -77,7 +77,11 @@ This folder contains the documentation and technical specifications for a **Zero
 
 ---
 ## Using 24V instead of 12V
-<p align="center">**❗Please note that this whole documentation is based on 12V, and only in this paragraph have I tested it out with 24V❗**</p>
+
+<p align="center">
+  <strong>❗Please note that this whole documentation is based on 12V, and only in this paragraph have I tested it out with 24V❗</strong>
+</p>
+
 This specific circuit CAN work with 24V, but then you definetly need to replace the PVC wire with copper tubing. The current running through the work coil heats it up enough to burn you in ~15 seconds. But the difference in power is considerable! Although have in mind that this will increase the current draw 2 times, so I was not able to heat the big alligator clip with my bench power supply. Even heating the end of the pincers pulls 9.5A, while alligator clip might draw even above 20A (which is the max current of this particular schematic due to the inductor choke max current).
 
 
