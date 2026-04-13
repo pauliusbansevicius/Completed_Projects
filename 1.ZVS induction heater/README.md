@@ -47,7 +47,7 @@ This folder contains the documentation and technical specifications for a **Zero
 
 | Component | Specification | Description |
 | :--- | :--- | :--- |
-| **V1** | 12V DC | Power supply (PC PSU or car battery(READ WARNING AT THE TOP OF THE PAGE). |
+| **V1** | 12V DC (24V with circuit modifications) | Power supply (PC PSU or car battery(READ WARNING AT THE TOP OF THE PAGE). |
 | **M1, M2** | IRFP250N | NMOSFETs for switching the resonant circuit. |
 | **L1** | 2-3µH | Air wound coil: 10AWG wire, 5cm diameter, 8-10 turns. |
 | **L2, L3** | 100µH | 20A toroidal inductors (choke) to protect the PSU. |
